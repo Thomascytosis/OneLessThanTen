@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1, Less Than 10</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>One, Less Than Ten</h1>
+      <nav id="nav">
+        <button id="rulesBtn">Rules</button>
+        <button id="quitBtn">Quit</button>
+      </nav>
+    </header>
+    <main>
+      <div id="rules">
+        <h2>The Rules of the Game</h2>
+        <hr />
+        <ol>
+          <li>The player with the larger number wins unless...</li>
+          <li>
+            When total of both sign numbers added together equal 9 or 11; the
+            player with the lower number wins.
+          </li>
+          <li>
+            If the same sign is used by both players the result is a tie and
+            that sign used by both players is no longer a valid option for the
+            remainder of the game
+          </li>
+          <li>Play a number of rounds until their is a clear winner</li>
+          <li>
+            The game will also end immediately when a player wins with an 1
+            beating 10
+          </li>
+        </ol>
+      </div>
+      <div id="start-menu">
+        <h1>Welcome</h1>
+        <p>
+          <i>One, Less Than Ten</i> is a game that came to me in a
+          <a id="dream-link">dream</a>. It is a lot like
+          <i>Rock, Paper, Scissors</i> but with a little math involved.
+        </p>
+        <div id="dream">
+          <p>
+            <b>Fun Fact:</b>On January 18th 2024, I literally did have a dream.
+            In the dream I was talking to someone. I don't remember about what.
+            I don't remember a lot about the dream. But near the end of the
+            dream I said something like "I can make a quick game on the fly".
+            And they said "no you can't!" And I proceeded to teach this person
+            how to play this game as I made it up. When I woke up, I wrote it
+            down.
+          </p>
+        </div>
+        <h2>The Rules of the Game</h2>
+        <hr />
+        <ol>
+          <li>Two players square off</li>
+          <li>On the count of 3 both assume a hand sign</li>
+          <li>The valid hand signs are numbers 1 through 10</li>
+          <li>The player with the larger number wins</li>
+          <p>EXCEPT:</p>
+          <li>When total of both sign numbers added together equal 9</li>
+          <p>OR</p>
+          <li>
+            The total of both sign numbers added together equals
+            <a id="dream-link2">11</a>
+          </li>
+          <div id="dream2">
+            <p>
+              In my dream, i used "added together minus 10 equals 1" because the
+              dream was really selling the name of the game.
+            </p>
+          </div>
+          <p>THEN</p>
+          <li>The player with the lower number wins.</li>
+          <li>
+            If the same sign is used by both players the result is a tie and
+            that sign used by both players is no longer a valid option for the
+            remainder of the game
+          </li>
+          <li>Play a number of rounds until their is a clear winner</li>
+          <p>OR</p>
+          <li>
+            The game will also end immediately when a player wins with an 1
+            beating 10
+          </li>
+        </ol>
+        <p>
+          <b>*Optional High-Stakes Gambling Rule:</b> Each sign used by a player
+          is no longer valid for that player for the remainder of the game.
+          Place bets between each throw.
+        </p>
+        <fieldset>
+          <legend>Play & Options</legend>
+          <label for="gambling-rule"
+            >Gambling Rule<input
+              type="checkbox"
+              name="gambling-rule"
+              id="gambling-rule"
+          /></label>
+          <label for="show-player-cards"
+            >Show played numbers<input
+              type="checkbox"
+              name="show-player-cards"
+              id="show-player-cards"
+          /></label>
+          <label for="show-computer-cards"
+            >Show computer numbers<input
+              type="checkbox"
+              name="show-computer-cards"
+              id="show-computer-cards"
+          /></label>
+          <div id="help">
+            <a href="https://findtreatment.gov/">Gambling Addiction Help</a>
+            <a href="tel:1-800-662-4357">&#128222;1-800-662-HELP</a>
+          </div>
+          <button id="start-game">PLAY</button>
+        </fieldset>
+      </div>
+      <div id="game">
+        <div id="winner">You Win!</div>
+        <div id="player-played-cards" class="played-area">
+          <div class="card"></div>
+        </div>
+        <div id="play-area">
+          <div id="player-card" class="played-card"></div>
+          <div id="computer-card" class="played-card"></div>
+        </div>
+        <div id="computer-played-cards" class="played-area">
+          <div class="card"></div>
+        </div>
+        <div id="player-hand" class="hand">
+          <div class="card"><img src="./images/1.jpg" alt="1 in asl" /></div>
+          <div class="card"><img src="./images/2.jpg" alt="" /></div>
+          <div class="card"><img src="./images/3.jpg" alt="" /></div>
+          <div class="card"><img src="./images/4.jpg" alt="" /></div>
+          <div class="card"><img src="./images/5.jpg" alt="" /></div>
+          <div class="card"><img src="./images/6.jpg" alt="" /></div>
+          <div class="card"><img src="./images/7.jpg" alt="" /></div>
+          <div class="card"><img src="./images/8.jpg" alt="" /></div>
+          <div class="card"><img src="./images/9.jpg" alt="" /></div>
+          <div class="card"><img src="./images/10.jpg" alt="" /></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© Copyright 2024, github.com/Thomascytosis. All Rights Reserved</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
